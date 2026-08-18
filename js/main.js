@@ -221,23 +221,124 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ---------- Appointment Form ----------
-    const appointmentForm = document.getElementById('appointmentForm');
-    if (appointmentForm) {
-        appointmentForm.addEventListener('submit', function (e) {
+    // ---------- Appointment Form (Email + WhatsApp) ----------
+    var CLINIC_EMAIL = 'byas.paswan99@gmail.com';
+    var CLINIC_WHATSAPP = '918417054866';
+
+    var appointmentForm = document.getElementById('appointmentForm');
+    var sendEmailBtn = document.getElementById('sendEmailBtn');
+    var sendWhatsAppBtn = document.getElementById('sendWhatsAppBtn');
+
+    function getAppointmentData() {
+        return {
+            name: document.getElementById('fullName').value.trim(),
+            email: document.getElementById('email').value.trim(),
+            phone: document.getElementById('phone').value.trim(),
+            date: document.getElementById('date').value,
+            time: document.getElementById('time').value,
+            department: document.getElementById('department').value,
+            doctor: document.getElementById('doctor').value,
+            message: document.getElementById('message').value.trim()
+        };
+    }
+
+    function validateAppointmentForm() {
+        var d = getAppointmentData();
+        if (!d.name) { alert('Please enter your full name.'); return false; }
+        if (!d.email) { alert('Please enter your email.'); return false; }
+        if (!d.phone) { alert('Please enter your phone number.'); return false; }
+        if (!d.date) { alert('Please select a date.'); return false; }
+        if (!d.time) { alert('Please select a time.'); return false; }
+        if (!d.department) { alert('Please select a department.'); return false; }
+        if (!d.doctor) { alert('Please select a doctor.'); return false; }
+        return true;
+    }
+
+    function buildEmailBody(d) {
+        return 'New Appointment Request%0D%0A%0D%0A' +
+            '--- Patient Details ---%0D%0A' +
+            'Name: ' + d.name + '%0D%0A' +
+            'Email: ' + d.email + '%0D%0A' +
+            'Phone: ' + d.phone + '%0D%0A%0D%0A' +
+            '--- Appointment Details ---%0D%0A' +
+            'Date: ' + d.date + '%0D%0A' +
+            'Time: ' + d.time + '%0D%0A' +
+            'Department: ' + d.department + '%0D%0A' +
+            'Doctor: ' + d.doctor + '%0D%0A%0D%0A' +
+            'Message: ' + (d.message || 'N/A') + '%0D%0A%0D%0A' +
+            '--- Sent from Modern Clinic Website ---';
+    }
+
+    function buildWhatsAppMessage(d) {
+        return '*New Appointment Request*%0A%0A' +
+            '*Patient Details:*%0A' +
+            'Name: ' + d.name + '%0A' +
+            'Email: ' + d.email + '%0A' +
+            'Phone: ' + d.phone + '%0A%0A' +
+            '*Appointment Details:*%0A' +
+            'Date: ' + d.date + '%0A' +
+            'Time: ' + d.time + '%0A' +
+            'Department: ' + d.department + '%0A' +
+            'Doctor: ' + d.doctor + '%0A%0A' +
+            'Message: ' + (d.message || 'N/A');
+    }
+
+    if (sendEmailBtn) {
+        sendEmailBtn.addEventListener('click', function (e) {
             e.preventDefault();
-            alert('Your appointment request has been submitted successfully! We will contact you shortly to confirm.');
-            this.reset();
+            if (!validateAppointmentForm()) return;
+            var d = getAppointmentData();
+            var subject = encodeURIComponent('Appointment Request - ' + d.name + ' (' + d.department + ')');
+            var body = buildEmailBody(d);
+            window.location.href = 'mailto:' + CLINIC_EMAIL + '?subject=' + subject + '&body=' + body;
+            alert('Your email client will open with the appointment details pre-filled.\n\nPlease click SEND in your email to complete the booking.\n\nClinic Email: ' + CLINIC_EMAIL);
         });
     }
 
-    // ---------- Contact Form ----------
-    const contactForm = document.getElementById('contactForm');
+    if (sendWhatsAppBtn) {
+        sendWhatsAppBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (!validateAppointmentForm()) return;
+            var d = getAppointmentData();
+            var msg = buildWhatsAppMessage(d);
+            window.open('https://wa.me/' + CLINIC_WHATSAPP + '?text=' + msg, '_blank');
+            alert('WhatsApp will open with your appointment details pre-filled.\n\nPlease tap SEND to complete the booking.');
+        });
+    }
+
+    // Also handle form submit (Enter key) as email
+    if (appointmentForm) {
+        appointmentForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (sendEmailBtn) sendEmailBtn.click();
+        });
+    }
+
+    // ---------- Contact Form (Email) ----------
+    var contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-            this.reset();
+            var name = document.getElementById('fullName') ? document.getElementById('fullName').value.trim() : '';
+            var email = document.getElementById('email') ? document.getElementById('email').value.trim() : '';
+            var phone = document.getElementById('phone') ? document.getElementById('phone').value.trim() : '';
+            var subject = document.getElementById('subject') ? document.getElementById('subject').value.trim() : '';
+            var message = document.getElementById('message') ? document.getElementById('message').value.trim() : '';
+
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            var mailSubject = encodeURIComponent(subject || 'Contact Form - ' + name);
+            var mailBody = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Phone: ' + phone + '\n\n' +
+                'Message:\n' + message + '\n\n--- Sent from Modern Clinic Website ---'
+            );
+            window.location.href = 'mailto:' + CLINIC_EMAIL + '?subject=' + mailSubject + '&body=' + mailBody;
+            alert('Your email client will open with the message pre-filled.\n\nPlease click SEND in your email.\n\nClinic Email: ' + CLINIC_EMAIL);
         });
     }
 

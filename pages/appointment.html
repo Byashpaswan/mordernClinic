@@ -216,12 +216,18 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" rows="5" placeholder="Describe your symptoms or reason for visit..."></textarea>
+                                <label for="message">Message / Symptoms</label>
+                                <textarea id="message" rows="4" placeholder="Describe your symptoms or reason for visit..."></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-lg">
-                                <i class="fas fa-calendar-check"></i> Book Appointment
-                            </button>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-lg" id="sendEmailBtn">
+                                    <i class="fas fa-envelope"></i> Send via Email
+                                </button>
+                                <button type="button" class="btn btn-whatsapp btn-lg" id="sendWhatsAppBtn">
+                                    <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                                </button>
+                            </div>
+                            <p class="form-note"><i class="fas fa-info-circle"></i> Email opens your Gmail with pre-filled details. WhatsApp sends directly to our clinic.</p>
                         </form>
                     </div>
 
@@ -336,6 +342,9 @@
                         <a href="tel:+15559110000" class="btn btn-white btn-lg">
                             <i class="fas fa-phone-alt"></i> Call: +1 (555) 911-0000
                         </a>
+                        <a href="https://wa.me/918417054866?text=Hi%20Modern%20Clinic%2C%20I%20need%20emergency%20medical%20help." class="btn btn-whatsapp btn-lg" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Us
+                        </a>
                         <a href="contact.html" class="btn btn-outline-white btn-lg">
                             <i class="fas fa-envelope"></i> Contact Us
                         </a>
@@ -411,6 +420,12 @@
             <i class="fas fa-arrow-up"></i>
         </button>
     </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918417054866?text=Hi%20Modern%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Book via WhatsApp</span>
+    </a>
 
     <script src="../js/main.js"></script>
 </body>
