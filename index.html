@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Clinic - Your Health, Our Priority</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</span>
+                <span><i class="fas fa-envelope"></i> info@modernclinic.com</span>
+                <span><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 9:00 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-heartbeat logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-name">Modern</span>
+                    <span class="logo-sub">Clinic</span>
+                </div>
+            </div>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-search">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home"></i><span>Home</span>
+            </a>
+            <a href="pages/about.html" class="nav-item">
+                <i class="fas fa-user-md"></i><span>About Us</span>
+            </a>
+            <a href="pages/services.html" class="nav-item">
+                <i class="fas fa-stethoscope"></i><span>Services</span>
+            </a>
+            <a href="pages/doctors.html" class="nav-item">
+                <i class="fas fa-user-nurse"></i><span>Our Doctors</span>
+            </a>
+            <a href="pages/appointment.html" class="nav-item">
+                <i class="fas fa-calendar-check"></i><span>Appointment</span>
+            </a>
+            <a href="pages/gallery.html" class="nav-item">
+                <i class="fas fa-images"></i><span>Gallery</span>
+            </a>
+            <a href="pages/blog.html" class="nav-item">
+                <i class="fas fa-blog"></i><span>Blog</span>
+            </a>
+            <a href="pages/contact.html" class="nav-item">
+                <i class="fas fa-envelope"></i><span>Contact</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-cta">
+            <div class="cta-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="cta-text">
+                <p>Emergency? Call Us Now</p>
+                <h4>+1 (555) 911-0000</h4>
+            </div>
+        </div>
+
+        <div class="sidebar-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header-container">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="logo header-logo">
+                        <i class="fas fa-heartbeat logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-name">Modern</span>
+                            <span class="logo-sub">Clinic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <a href="pages/appointment.html" class="btn btn-primary header-btn">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                    <a href="pages/contact.html" class="btn btn-outline header-btn">
+                        <i class="fas fa-phone-alt"></i> Emergency
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="hero-slide active" style="background: linear-gradient(135deg, rgba(0,123,167,0.9), rgba(0,188,212,0.7)), none;">
+                    <div class="hero-content">
+                        <span class="hero-badge">Welcome to Modern Clinic</span>
+                        <h1>Your Health Is Our <span class="text-gradient">Top Priority</span></h1>
+                        <p>We provide world-class healthcare services with state-of-the-art technology and experienced medical professionals dedicated to your well-being.</p>
+                        <div class="hero-btns">
+                            <a href="pages/appointment.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </a>
+                            <a href="pages/services.html" class="btn btn-glass btn-lg">
+                                <i class="fas fa-play-circle"></i> Our Services
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="25">0</span>+
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="50">0</span>+
+                                <span class="stat-label">Expert Doctors</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="10000">0</span>+
+                                <span class="stat-label">Happy Patients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="50">0</span>+
+                                <span class="stat-label">Services</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background: linear-gradient(135deg, rgba(0,77,64,0.9), rgba(0,150,136,0.7)), none;">
+                    <div class="hero-content">
+                        <span class="hero-badge">Advanced Healthcare</span>
+                        <h1>Compassionate Care, <span class="text-gradient">Advanced Medicine</span></h1>
+                        <p>Experience the difference of personalized healthcare where every patient receives individual attention and cutting-edge treatment.</p>
+                        <div class="hero-btns">
+                            <a href="pages/doctors.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-user-md"></i> Meet Our Doctors
+                            </a>
+                            <a href="pages/about.html" class="btn btn-glass btn-lg">
+                                <i class="fas fa-info-circle"></i> About Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide" style="background: linear-gradient(135deg, rgba(183,28,28,0.85), rgba(244,67,54,0.7)), none;">
+                    <div class="hero-content">
+                        <span class="hero-badge">Emergency Services</span>
+                        <h1>24/7 Emergency <span class="text-gradient">Medical Care</span></h1>
+                        <p>Round-the-clock emergency services with rapid response teams and fully equipped ambulances at your service.</p>
+                        <div class="hero-btns">
+                            <a href="tel:+15559110000" class="btn btn-danger btn-lg">
+                                <i class="fas fa-phone-alt"></i> Call Emergency
+                            </a>
+                            <a href="pages/services.html" class="btn btn-glass btn-lg">
+                                <i class="fas fa-ambulance"></i> Ambulance Service
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-nav">
+                <button class="hero-nav-btn prev" id="heroPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="hero-nav-btn next" id="heroNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="hero-dots" id="heroDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- Quick Services -->
+        <section class="quick-services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What We Offer</span>
+                    <h2>Quick Access to <span class="text-gradient">Our Services</span></h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Cardiology</h3>
+                        <p>Complete heart care with advanced diagnostics and treatment</p>
+                        <a href="pages/services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Neurology</h3>
+                        <p>Expert neurological care for brain and nervous system</p>
+                        <a href="pages/services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon"><i class="fas fa-bone"></i></div>
+                        <h3>Orthopedics</h3>
+                        <p>Advanced bone and joint treatment with modern techniques</p>
+                        <a href="pages/services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon"><i class="fas fa-tooth"></i></div>
+                        <h3>Dental Care</h3>
+                        <p>Complete dental solutions for the whole family</p>
+                        <a href="pages/services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Ophthalmology</h3>
+                        <p>Advanced eye care with latest technology</p>
+                        <a href="pages/services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-icon"><i class="fas fa-baby"></i></div>
+                        <h3>Pediatrics</h3>
+                        <p>Specialized healthcare for infants, children & adolescents</p>
+                        <a href="pages/services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-images">
+                        <div class="about-img-main">
+                            <div class="about-img-placeholder"><i class="fas fa-hospital"></i></div>
+                        </div>
+                        <div class="about-img-secondary">
+                            <div class="about-img-placeholder"><i class="fas fa-user-md"></i></div>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="exp-number">25+</span>
+                            <span class="exp-text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <span class="section-tag">About Modern Clinic</span>
+                        <h2>We Are The Best Medical And <span class="text-gradient">Health Care</span> Provider</h2>
+                        <p>Modern Clinic has been serving the community for over 25 years, providing exceptional healthcare services with compassion and excellence. Our team of world-class doctors and staff are dedicated to delivering personalized care.</p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                                <div>
+                                    <h4>Advanced Technology</h4>
+                                    <p>State-of-the-art medical equipment</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                                <div>
+                                    <h4>Expert Doctors</h4>
+                                    <p>Board-certified specialists</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                                <div>
+                                    <h4>24/7 Emergency</h4>
+                                    <p>Round-the-clock care available</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                                <div>
+                                    <h4>Affordable Pricing</h4>
+                                    <p>Quality care at fair prices</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="pages/about.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-info-circle"></i> Learn More About Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-us">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Why Choose Us</span>
+                    <h2>Reasons to <span class="text-gradient">Choose Us</span></h2>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-number">01</div>
+                        <div class="why-icon"><i class="fas fa-user-md"></i></div>
+                        <h3>Expert Medical Team</h3>
+                        <p>Our team consists of 50+ board-certified specialists with decades of experience in their respective fields.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">02</div>
+                        <div class="why-icon"><i class="fas fa-hospital"></i></div>
+                        <h3>Modern Facility</h3>
+                        <p>100,000 sq ft state-of-the-art medical facility with the latest diagnostic and treatment equipment.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">03</div>
+                        <div class="why-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h3>Compassionate Care</h3>
+                        <p>We treat every patient like family, ensuring comfort and personalized attention throughout their visit.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">04</div>
+                        <div class="why-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Quick Appointments</h3>
+                        <p>Online booking system with minimal wait times. Same-day appointments available for urgent cases.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Preview -->
+        <section class="doctors-preview">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Team</span>
+                    <h2>Meet Our <span class="text-gradient">Expert Doctors</span></h2>
+                </div>
+                <div class="doctors-grid">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Sarah Johnson</h3>
+                            <span class="doctor-specialty">Cardiologist</span>
+                            <p>20+ years experience in interventional cardiology</p>
+                            <a href="pages/doctors.html" class="btn btn-outline btn-sm">View Profile</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Michael Chen</h3>
+                            <span class="doctor-specialty">Neurologist</span>
+                            <p>Expert in neurodegenerative disorders</p>
+                            <a href="pages/doctors.html" class="btn btn-outline btn-sm">View Profile</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Emily Rodriguez</h3>
+                            <span class="doctor-specialty">Orthopedic Surgeon</span>
+                            <p>Minimally invasive joint replacement specialist</p>
+                            <a href="pages/doctors.html" class="btn btn-outline btn-sm">View Profile</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. James Wilson</h3>
+                            <span class="doctor-specialty">Pediatrician</span>
+                            <p>15+ years caring for children's health</p>
+                            <a href="pages/doctors.html" class="btn btn-outline btn-sm">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="pages/doctors.html" class="btn btn-primary btn-lg mt-2">
+                        <i class="fas fa-users"></i> View All Doctors
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="cta-bg-pattern"></div>
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Need Emergency Medical Help?</h2>
+                    <p>Our emergency department is open 24/7 with experienced medical professionals ready to help you.</p>
+                    <div class="cta-btns">
+                        <a href="tel:+15559110000" class="btn btn-white btn-lg">
+                            <i class="fas fa-phone-alt"></i> Call: +1 (555) 911-0000
+                        </a>
+                        <a href="pages/appointment.html" class="btn btn-outline-white btn-lg">
+                            <i class="fas fa-ambulance"></i> Request Ambulance
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Testimonials</span>
+                    <h2>What Our <span class="text-gradient">Patients Say</span></h2>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>"Modern Clinic provided exceptional care during my heart surgery. The entire team was professional, compassionate, and made me feel at ease throughout the process. I highly recommend their services."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h4>Robert Thompson</h4>
+                                <span>Heart Surgery Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>"The pediatric department is amazing! Dr. Wilson took excellent care of my son. The staff is friendly and the facility is very clean and modern. Best clinic in town!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h4>Maria Garcia</h4>
+                                <span>Pediatrics Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>"After my knee replacement at Modern Clinic, I recovered faster than expected. The rehabilitation team was outstanding. I'm back to running marathons thanks to Dr. Rodriguez!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h4>David Park</h4>
+                                <span>Orthopedic Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="test-prev" id="testPrev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="test-dots" id="testDots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="test-next" id="testNext"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Preview -->
+        <section class="blog-preview">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Latest News</span>
+                    <h2>Read Our <span class="text-gradient">Health Blog</span></h2>
+                </div>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <div class="blog-img-placeholder"><i class="fas fa-newspaper"></i></div>
+                            <span class="blog-category">Health Tips</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> Aug 15, 2026</span>
+                                <span><i class="fas fa-user"></i> Dr. Johnson</span>
+                            </div>
+                            <h3>10 Tips for a Healthy Heart This Summer</h3>
+                            <p>Discover essential tips to keep your heart healthy during the warm months...</p>
+                            <a href="pages/blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <div class="blog-img-placeholder"><i class="fas fa-newspaper"></i></div>
+                            <span class="blog-category">Wellness</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> Aug 10, 2026</span>
+                                <span><i class="fas fa-user"></i> Dr. Chen</span>
+                            </div>
+                            <h3>Understanding Migraine: Causes and Prevention</h3>
+                            <p>Learn about the common triggers and effective prevention strategies...</p>
+                            <a href="pages/blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <div class="blog-img-placeholder"><i class="fas fa-newspaper"></i></div>
+                            <span class="blog-category">Nutrition</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> Aug 5, 2026</span>
+                                <span><i class="fas fa-user"></i> Dr. Rodriguez</span>
+                            </div>
+                            <h3>Best Foods for Strong Bones and Joints</h3>
+                            <p>Nutrition plays a vital role in maintaining bone health. Here are the top foods...</p>
+                            <a href="pages/blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <p>Get the latest health tips, clinic updates, and exclusive offers.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <i class="fas fa-heartbeat logo-icon"></i>
+                            <div class="logo-text">
+                                <span class="logo-name">Modern</span>
+                                <span class="logo-sub">Clinic</span>
+                            </div>
+                        </div>
+                        <p>Providing exceptional healthcare services with compassion and excellence for over 25 years.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/about.html">About Us</a></li>
+                            <li><a href="pages/services.html">Services</a></li>
+                            <li><a href="pages/doctors.html">Our Doctors</a></li>
+                            <li><a href="pages/appointment.html">Book Appointment</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="pages/services.html">Cardiology</a></li>
+                            <li><a href="pages/services.html">Neurology</a></li>
+                            <li><a href="pages/services.html">Orthopedics</a></li>
+                            <li><a href="pages/services.html">Pediatrics</a></li>
+                            <li><a href="pages/services.html">Dental Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Health Street, Medical City, MC 12345</li>
+                            <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@modernclinic.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Sat: 8AM - 9PM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Modern Clinic. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

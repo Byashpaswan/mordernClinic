@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - Modern Clinic</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</span>
+                <span><i class="fas fa-envelope"></i> info@modernclinic.com</span>
+                <span><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 9:00 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-heartbeat logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-name">Modern</span>
+                    <span class="logo-sub">Clinic</span>
+                </div>
+            </div>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-search">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="../index.html" class="nav-item">
+                <i class="fas fa-home"></i><span>Home</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <i class="fas fa-user-md"></i><span>About Us</span>
+            </a>
+            <a href="services.html" class="nav-item">
+                <i class="fas fa-stethoscope"></i><span>Services</span>
+            </a>
+            <a href="doctors.html" class="nav-item active">
+                <i class="fas fa-user-nurse"></i><span>Our Doctors</span>
+            </a>
+            <a href="appointment.html" class="nav-item">
+                <i class="fas fa-calendar-check"></i><span>Appointment</span>
+            </a>
+            <a href="gallery.html" class="nav-item">
+                <i class="fas fa-images"></i><span>Gallery</span>
+            </a>
+            <a href="blog.html" class="nav-item">
+                <i class="fas fa-blog"></i><span>Blog</span>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <i class="fas fa-envelope"></i><span>Contact</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-cta">
+            <div class="cta-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="cta-text">
+                <p>Emergency? Call Us Now</p>
+                <h4>+1 (555) 911-0000</h4>
+            </div>
+        </div>
+
+        <div class="sidebar-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header-container">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="logo header-logo">
+                        <i class="fas fa-heartbeat logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-name">Modern</span>
+                            <span class="logo-sub">Clinic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <a href="appointment.html" class="btn btn-primary header-btn">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                    <a href="contact.html" class="btn btn-outline header-btn">
+                        <i class="fas fa-phone-alt"></i> Emergency
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Banner -->
+        <section class="page-banner" style="background: linear-gradient(135deg, rgba(0,123,167,0.9), rgba(0,188,212,0.7)), none;">
+            <div class="container">
+                <div class="page-banner-content">
+                    <h1>Meet Our Expert Doctors</h1>
+                    <div class="breadcrumb">
+                        <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                        <span>/</span>
+                        <span>Our Doctors</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Page -->
+        <section class="doctors-page">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Medical Team</span>
+                    <h2>Expert <span class="text-gradient">Doctors</span></h2>
+                </div>
+                <div class="doctors-detail-grid">
+                    <!-- Doctor 1 -->
+                    <div class="doctor-detail-card">
+                        <div class="doctor-detail-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="doctor-detail-info">
+                            <h3>Dr. Sarah Johnson</h3>
+                            <span class="doctor-detail-specialty">Cardiologist</span>
+                            <p>With over 20 years of experience in interventional cardiology, Dr. Johnson leads our heart center with compassion and expertise.</p>
+                            <div class="doctor-detail-tags">
+                                <span class="tag">Cardiology</span>
+                                <span class="tag">Interventional</span>
+                                <span class="tag">Heart Surgery</span>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 2 -->
+                    <div class="doctor-detail-card">
+                        <div class="doctor-detail-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="doctor-detail-info">
+                            <h3>Dr. Michael Chen</h3>
+                            <span class="doctor-detail-specialty">Neurologist</span>
+                            <p>An expert in neurodegenerative disorders, Dr. Chen brings cutting-edge research and treatment to patients with neurological conditions.</p>
+                            <div class="doctor-detail-tags">
+                                <span class="tag">Neurology</span>
+                                <span class="tag">Brain Health</span>
+                                <span class="tag">Research</span>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 3 -->
+                    <div class="doctor-detail-card">
+                        <div class="doctor-detail-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="doctor-detail-info">
+                            <h3>Dr. Emily Rodriguez</h3>
+                            <span class="doctor-detail-specialty">Orthopedic Surgeon</span>
+                            <p>Specializing in minimally invasive joint replacement, Dr. Rodriguez helps patients regain mobility and live pain-free lives.</p>
+                            <div class="doctor-detail-tags">
+                                <span class="tag">Orthopedics</span>
+                                <span class="tag">Joint Replacement</span>
+                                <span class="tag">Sports Medicine</span>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 4 -->
+                    <div class="doctor-detail-card">
+                        <div class="doctor-detail-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="doctor-detail-info">
+                            <h3>Dr. James Wilson</h3>
+                            <span class="doctor-detail-specialty">Pediatrician</span>
+                            <p>With 15+ years of dedicated pediatric care, Dr. Wilson provides gentle and thorough healthcare for infants, children, and adolescents.</p>
+                            <div class="doctor-detail-tags">
+                                <span class="tag">Pediatrics</span>
+                                <span class="tag">Child Health</span>
+                                <span class="tag">Vaccinations</span>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 5 -->
+                    <div class="doctor-detail-card">
+                        <div class="doctor-detail-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="doctor-detail-info">
+                            <h3>Dr. Amanda Foster</h3>
+                            <span class="doctor-detail-specialty">Dermatologist</span>
+                            <p>A trusted skin care specialist, Dr. Foster offers advanced treatments for a wide range of dermatological conditions and cosmetic procedures.</p>
+                            <div class="doctor-detail-tags">
+                                <span class="tag">Dermatology</span>
+                                <span class="tag">Skin Care</span>
+                                <span class="tag">Cosmetic</span>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 6 -->
+                    <div class="doctor-detail-card">
+                        <div class="doctor-detail-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="doctor-detail-info">
+                            <h3>Dr. Robert Kim</h3>
+                            <span class="doctor-detail-specialty">ENT Specialist</span>
+                            <p>An expert in ear, nose, and throat conditions, Dr. Kim provides comprehensive diagnostics and treatment for ENT disorders.</p>
+                            <div class="doctor-detail-tags">
+                                <span class="tag">ENT</span>
+                                <span class="tag">Sinus Care</span>
+                                <span class="tag">Hearing</span>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 7 -->
+                    <div class="doctor-detail-card">
+                        <div class="doctor-detail-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="doctor-detail-info">
+                            <h3>Dr. Lisa Anderson</h3>
+                            <span class="doctor-detail-specialty">Gynecologist</span>
+                            <p>A dedicated women's health expert, Dr. Anderson provides compassionate and comprehensive gynecological and reproductive care.</p>
+                            <div class="doctor-detail-tags">
+                                <span class="tag">Gynecology</span>
+                                <span class="tag">Women's Health</span>
+                                <span class="tag">Reproductive</span>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 8 -->
+                    <div class="doctor-detail-card">
+                        <div class="doctor-detail-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="doctor-detail-info">
+                            <h3>Dr. David Patel</h3>
+                            <span class="doctor-detail-specialty">Urologist</span>
+                            <p>With 15+ years of experience, Dr. Patel specializes in diagnosing and treating urinary tract conditions and male reproductive health.</p>
+                            <div class="doctor-detail-tags">
+                                <span class="tag">Urology</span>
+                                <span class="tag">Kidney Care</span>
+                                <span class="tag">Surgery</span>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </div>
+
+                    <!-- Doctor 9 -->
+                    <div class="doctor-detail-card">
+                        <div class="doctor-detail-img">
+                            <div class="doctor-img-placeholder"><i class="fas fa-user"></i></div>
+                        </div>
+                        <div class="doctor-detail-info">
+                            <h3>Dr. Maria Santos</h3>
+                            <span class="doctor-detail-specialty">Ophthalmologist</span>
+                            <p>As a skilled eye surgeon, Dr. Santos provides advanced eye care treatments including cataract surgery, glaucoma management, and vision correction.</p>
+                            <div class="doctor-detail-tags">
+                                <span class="tag">Ophthalmology</span>
+                                <span class="tag">Eye Surgery</span>
+                                <span class="tag">Vision Care</span>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="cta-bg-pattern"></div>
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Need Emergency Medical Help?</h2>
+                    <p>Our emergency department is open 24/7 with experienced medical professionals ready to help you.</p>
+                    <div class="cta-btns">
+                        <a href="tel:+15559110000" class="btn btn-white btn-lg">
+                            <i class="fas fa-phone-alt"></i> Call: +1 (555) 911-0000
+                        </a>
+                        <a href="appointment.html" class="btn btn-outline-white btn-lg">
+                            <i class="fas fa-ambulance"></i> Request Ambulance
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <i class="fas fa-heartbeat logo-icon"></i>
+                            <div class="logo-text">
+                                <span class="logo-name">Modern</span>
+                                <span class="logo-sub">Clinic</span>
+                            </div>
+                        </div>
+                        <p>Providing exceptional healthcare services with compassion and excellence for over 25 years.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="doctors.html">Our Doctors</a></li>
+                            <li><a href="appointment.html">Book Appointment</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="services.html">Cardiology</a></li>
+                            <li><a href="services.html">Neurology</a></li>
+                            <li><a href="services.html">Orthopedics</a></li>
+                            <li><a href="services.html">Pediatrics</a></li>
+                            <li><a href="services.html">Dental Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Health Street, Medical City, MC 12345</li>
+                            <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@modernclinic.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Sat: 8AM - 9PM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Modern Clinic. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="900" viewBox="0 0 1920 900">
+  <defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0078A8;stop-opacity:1"/><stop offset="100%" style="stop-color:#00BCD4;stop-opacity:1"/></linearGradient></defs>
+  <rect width="1920" height="900" fill="url(#g1)"/>
+  <circle cx="300" cy="200" r="150" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1600" cy="700" r="200" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="900" cy="450" r="100" fill="rgba(255,255,255,0.03)"/>
+  <path d="M0 600 Q480 400 960 550 Q1440 700 1920 500 L1920 900 L0 900Z" fill="rgba(0,0,0,0.1)"/>
+  <text x="960" y="420" font-family="Arial" font-size="60" fill="rgba(255,255,255,0.15)" text-anchor="middle">MODERN CLINIC</text>
+  <text x="960" y="480" font-family="Arial" font-size="24" fill="rgba(255,255,255,0.1)" text-anchor="middle">Your Health, Our Priority</text>
+</svg>

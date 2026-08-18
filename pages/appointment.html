@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - Modern Clinic</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</span>
+                <span><i class="fas fa-envelope"></i> info@modernclinic.com</span>
+                <span><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 9:00 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-heartbeat logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-name">Modern</span>
+                    <span class="logo-sub">Clinic</span>
+                </div>
+            </div>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-search">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="../index.html" class="nav-item">
+                <i class="fas fa-home"></i><span>Home</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <i class="fas fa-user-md"></i><span>About Us</span>
+            </a>
+            <a href="services.html" class="nav-item">
+                <i class="fas fa-stethoscope"></i><span>Services</span>
+            </a>
+            <a href="doctors.html" class="nav-item">
+                <i class="fas fa-user-nurse"></i><span>Our Doctors</span>
+            </a>
+            <a href="appointment.html" class="nav-item active">
+                <i class="fas fa-calendar-check"></i><span>Appointment</span>
+            </a>
+            <a href="gallery.html" class="nav-item">
+                <i class="fas fa-images"></i><span>Gallery</span>
+            </a>
+            <a href="blog.html" class="nav-item">
+                <i class="fas fa-blog"></i><span>Blog</span>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <i class="fas fa-envelope"></i><span>Contact</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-cta">
+            <div class="cta-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="cta-text">
+                <p>Emergency? Call Us Now</p>
+                <h4>+1 (555) 911-0000</h4>
+            </div>
+        </div>
+
+        <div class="sidebar-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header-container">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="logo header-logo">
+                        <i class="fas fa-heartbeat logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-name">Modern</span>
+                            <span class="logo-sub">Clinic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <a href="appointment.html" class="btn btn-primary header-btn">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                    <a href="contact.html" class="btn btn-outline header-btn">
+                        <i class="fas fa-phone-alt"></i> Emergency
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Banner -->
+        <section class="page-banner" style="background: linear-gradient(135deg, rgba(0,123,167,0.9), rgba(0,188,212,0.7));">
+            <div class="container">
+                <h1>Book an Appointment</h1>
+                <ul class="breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li>Book an Appointment</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Appointment Form Section -->
+        <section class="form-section">
+            <div class="container">
+                <div class="form-grid">
+                    <!-- Left Column: Appointment Form -->
+                    <div class="form-card">
+                        <div class="section-header">
+                            <span class="section-tag">Appointment</span>
+                            <h2>Book Your <span class="text-gradient">Appointment</span></h2>
+                        </div>
+                        <form id="appointmentForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Date</label>
+                                    <input type="date" id="date" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="time">Time</label>
+                                    <select id="time" required>
+                                        <option value="">Select Time</option>
+                                        <option value="08:00 AM">08:00 AM</option>
+                                        <option value="09:00 AM">09:00 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="12:00 PM">12:00 PM</option>
+                                        <option value="01:00 PM">01:00 PM</option>
+                                        <option value="02:00 PM">02:00 PM</option>
+                                        <option value="03:00 PM">03:00 PM</option>
+                                        <option value="04:00 PM">04:00 PM</option>
+                                        <option value="05:00 PM">05:00 PM</option>
+                                        <option value="06:00 PM">06:00 PM</option>
+                                        <option value="07:00 PM">07:00 PM</option>
+                                        <option value="08:00 PM">08:00 PM</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="department">Department</label>
+                                    <select id="department" required>
+                                        <option value="">Select Department</option>
+                                        <option value="Cardiology">Cardiology</option>
+                                        <option value="Neurology">Neurology</option>
+                                        <option value="Orthopedics">Orthopedics</option>
+                                        <option value="Pediatrics">Pediatrics</option>
+                                        <option value="Ophthalmology">Ophthalmology</option>
+                                        <option value="Dental Care">Dental Care</option>
+                                        <option value="Dermatology">Dermatology</option>
+                                        <option value="ENT">ENT</option>
+                                        <option value="Gynecology">Gynecology</option>
+                                        <option value="Urology">Urology</option>
+                                        <option value="General">General</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="doctor">Doctor</label>
+                                    <select id="doctor" required>
+                                        <option value="">Select Doctor</option>
+                                        <option value="Dr. Sarah Johnson">Dr. Sarah Johnson - Cardiologist</option>
+                                        <option value="Dr. Michael Chen">Dr. Michael Chen - Neurologist</option>
+                                        <option value="Dr. Emily Rodriguez">Dr. Emily Rodriguez - Orthopedic Surgeon</option>
+                                        <option value="Dr. James Wilson">Dr. James Wilson - Pediatrician</option>
+                                        <option value="Dr. Lisa Anderson">Dr. Lisa Anderson - Ophthalmologist</option>
+                                        <option value="Dr. Robert Taylor">Dr. Robert Taylor - Dental Surgeon</option>
+                                        <option value="Dr. Anna Martinez">Dr. Anna Martinez - Dermatologist</option>
+                                        <option value="Dr. David Kim">Dr. David Kim - ENT Specialist</option>
+                                        <option value="Dr. Rachel Green">Dr. Rachel Green - Gynecologist</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Describe your symptoms or reason for visit..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Right Column: Info Card -->
+                    <div class="info-card">
+                        <h3>Why Choose Modern Clinic?</h3>
+                        <ul class="info-list">
+                            <li>
+                                <div class="info-icon"><i class="fas fa-user-md"></i></div>
+                                <div class="info-text">
+                                    <h4>Expert Doctors</h4>
+                                    <p>Our team of 50+ board-certified specialists bring decades of experience and world-class expertise.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-icon"><i class="fas fa-microscope"></i></div>
+                                <div class="info-text">
+                                    <h4>Advanced Technology</h4>
+                                    <p>State-of-the-art diagnostic and treatment equipment for accurate results and effective care.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-icon"><i class="fas fa-ambulance"></i></div>
+                                <div class="info-text">
+                                    <h4>24/7 Emergency</h4>
+                                    <p>Round-the-clock emergency services with rapid response teams always ready to help.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-icon"><i class="fas fa-dollar-sign"></i></div>
+                                <div class="info-text">
+                                    <h4>Affordable Pricing</h4>
+                                    <p>Quality healthcare services at fair and transparent prices with flexible payment options.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-icon"><i class="fas fa-id-card"></i></div>
+                                <div class="info-text">
+                                    <h4>Insurance Accepted</h4>
+                                    <p>We accept most major insurance plans to make healthcare accessible for everyone.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="emergency-contact">
+                            <div class="emergency-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="emergency-text">
+                                <h4>Emergency Contact</h4>
+                                <p>24/7 Emergency Hotline</p>
+                                <h3>+1 (555) 911-0000</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clinic Hours Section -->
+        <section class="clinic-hours">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Schedule</span>
+                    <h2>Our <span class="text-gradient">Clinic Hours</span></h2>
+                </div>
+                <div class="hours-grid">
+                    <div class="hours-card">
+                        <div class="hours-day">Monday</div>
+                        <div class="hours-time"><i class="fas fa-clock"></i> 8:00 AM - 9:00 PM</div>
+                        <div class="hours-status open">Open Now</div>
+                    </div>
+                    <div class="hours-card">
+                        <div class="hours-day">Tuesday</div>
+                        <div class="hours-time"><i class="fas fa-clock"></i> 8:00 AM - 9:00 PM</div>
+                        <div class="hours-status open">Open Now</div>
+                    </div>
+                    <div class="hours-card">
+                        <div class="hours-day">Wednesday</div>
+                        <div class="hours-time"><i class="fas fa-clock"></i> 8:00 AM - 9:00 PM</div>
+                        <div class="hours-status open">Open Now</div>
+                    </div>
+                    <div class="hours-card">
+                        <div class="hours-day">Thursday</div>
+                        <div class="hours-time"><i class="fas fa-clock"></i> 8:00 AM - 9:00 PM</div>
+                        <div class="hours-status open">Open Now</div>
+                    </div>
+                    <div class="hours-card">
+                        <div class="hours-day">Friday</div>
+                        <div class="hours-time"><i class="fas fa-clock"></i> 8:00 AM - 9:00 PM</div>
+                        <div class="hours-status open">Open Now</div>
+                    </div>
+                    <div class="hours-card">
+                        <div class="hours-day">Saturday</div>
+                        <div class="hours-time"><i class="fas fa-clock"></i> 8:00 AM - 9:00 PM</div>
+                        <div class="hours-status open">Open Now</div>
+                    </div>
+                    <div class="hours-card sunday">
+                        <div class="hours-day">Sunday</div>
+                        <div class="hours-time"><i class="fas fa-ambulance"></i> Emergency Only</div>
+                        <div class="hours-status emergency">Emergency Services</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="cta-bg-pattern"></div>
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Need Emergency Medical Help?</h2>
+                    <p>Our emergency department is open 24/7 with experienced medical professionals ready to help you.</p>
+                    <div class="cta-btns">
+                        <a href="tel:+15559110000" class="btn btn-white btn-lg">
+                            <i class="fas fa-phone-alt"></i> Call: +1 (555) 911-0000
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-white btn-lg">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <i class="fas fa-heartbeat logo-icon"></i>
+                            <div class="logo-text">
+                                <span class="logo-name">Modern</span>
+                                <span class="logo-sub">Clinic</span>
+                            </div>
+                        </div>
+                        <p>Providing exceptional healthcare services with compassion and excellence for over 25 years.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="doctors.html">Our Doctors</a></li>
+                            <li><a href="appointment.html">Book Appointment</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="services.html">Cardiology</a></li>
+                            <li><a href="services.html">Neurology</a></li>
+                            <li><a href="services.html">Orthopedics</a></li>
+                            <li><a href="services.html">Pediatrics</a></li>
+                            <li><a href="services.html">Dental Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Health Street, Medical City, MC 12345</li>
+                            <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@modernclinic.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Sat: 8AM - 9PM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Modern Clinic. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
