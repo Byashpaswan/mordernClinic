@@ -255,31 +255,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function buildEmailBody(d) {
-        return 'New Appointment Request%0D%0A%0D%0A' +
-            '--- Patient Details ---%0D%0A' +
-            'Name: ' + d.name + '%0D%0A' +
-            'Email: ' + d.email + '%0D%0A' +
-            'Phone: ' + d.phone + '%0D%0A%0D%0A' +
-            '--- Appointment Details ---%0D%0A' +
-            'Date: ' + d.date + '%0D%0A' +
-            'Time: ' + d.time + '%0D%0A' +
-            'Department: ' + d.department + '%0D%0A' +
-            'Doctor: ' + d.doctor + '%0D%0A%0D%0A' +
-            'Message: ' + (d.message || 'N/A') + '%0D%0A%0D%0A' +
+        return 'New Appointment Request\n\n' +
+            '--- Patient Details ---\n' +
+            'Name: ' + d.name + '\n' +
+            'Email: ' + d.email + '\n' +
+            'Phone: ' + d.phone + '\n\n' +
+            '--- Appointment Details ---\n' +
+            'Date: ' + d.date + '\n' +
+            'Time: ' + d.time + '\n' +
+            'Department: ' + d.department + '\n' +
+            'Doctor: ' + d.doctor + '\n\n' +
+            'Message: ' + (d.message || 'N/A') + '\n\n' +
             '--- Sent from Modern Clinic Website ---';
     }
 
     function buildWhatsAppMessage(d) {
-        return '*New Appointment Request*%0A%0A' +
-            '*Patient Details:*%0A' +
-            'Name: ' + d.name + '%0A' +
-            'Email: ' + d.email + '%0A' +
-            'Phone: ' + d.phone + '%0A%0A' +
-            '*Appointment Details:*%0A' +
-            'Date: ' + d.date + '%0A' +
-            'Time: ' + d.time + '%0A' +
-            'Department: ' + d.department + '%0A' +
-            'Doctor: ' + d.doctor + '%0A%0A' +
+        return '*New Appointment Request*\n\n' +
+            '*Patient Details:*\n' +
+            'Name: ' + d.name + '\n' +
+            'Email: ' + d.email + '\n' +
+            'Phone: ' + d.phone + '\n\n' +
+            '*Appointment Details:*\n' +
+            'Date: ' + d.date + '\n' +
+            'Time: ' + d.time + '\n' +
+            'Department: ' + d.department + '\n' +
+            'Doctor: ' + d.doctor + '\n\n' +
             'Message: ' + (d.message || 'N/A');
     }
 
@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!validateAppointmentForm()) return;
             var d = getAppointmentData();
             var subject = encodeURIComponent('Appointment Request - ' + d.name + ' (' + d.department + ')');
-            var body = buildEmailBody(d);
+            var body = encodeURIComponent(buildEmailBody(d));
             window.location.href = 'mailto:' + CLINIC_EMAIL + '?subject=' + subject + '&body=' + body;
             alert('Your email client will open with the appointment details pre-filled.\n\nPlease click SEND in your email to complete the booking.\n\nClinic Email: ' + CLINIC_EMAIL);
         });
@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             if (!validateAppointmentForm()) return;
             var d = getAppointmentData();
-            var msg = buildWhatsAppMessage(d);
+            var msg = encodeURIComponent(buildWhatsAppMessage(d));
             window.open('https://wa.me/' + CLINIC_WHATSAPP + '?text=' + msg, '_blank');
             alert('WhatsApp will open with your appointment details pre-filled.\n\nPlease tap SEND to complete the booking.');
         });
